@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Barra de Navegación -->
+    <nav class="bg-white shadow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-xl font-bold text-blue-500">Red Social</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <input type="text" placeholder="Buscar..." class="bg-gray-100 px-3 py-1 rounded-full">
+                    <a href="#" class="text-gray-600">Inicio</a>
+                    <a href="#" class="text-gray-600">Perfil</a>
+                    <a href="#" class="text-gray-600">Mensajes</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenedor Principal -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6 grid grid-cols-3 gap-6">
+
+        <!-- Sección de Perfil de Usuario -->
+        <div class="col-span-1">
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <div class="flex flex-col items-center">
+                    <img src="https://via.placeholder.com/150" alt="Foto de perfil" class="w-24 h-24 rounded-full">
+                    <h2 class="mt-4 text-lg font-semibold">Agustín Coria</h2>
+                    <p class="text-gray-500">@aguscoria09</p>
+                </div>
+                <div class="mt-4">
+                    <p class="text-gray-700">Biografía breve del usuario. Puede incluir información interesante sobre
+                        él.</p>
+                </div>
+                <div class="mt-4">
+                    <button class="w-full bg-blue-500 text-white py-2 rounded-lg">Editar Perfil</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Feed de Publicaciones -->
+        <div class="col-span-2 space-y-4">
+            <!-- Formulario de Publicación -->
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <form>
+                    <textarea placeholder="¿Qué estás pensando?" class="w-full bg-gray-100 rounded-lg p-2"></textarea>
+                    <div class="flex justify-between items-center mt-2">
+                        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg">Publicar</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Publicaciones -->
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <div class="flex items-center space-x-4">
+                    <img src="https://via.placeholder.com/50" alt="Perfil" class="w-12 h-12 rounded-full">
+                    <div>
+                        <h3 class="font-semibold">Lautaro Correa</h3>
+                        <p class="text-gray-500 text-sm">Hace 2 horas</p>
+                    </div>
+                </div>
+                <p class="mt-4 text-gray-700">Esta es una publicación de ejemplo. Los usuarios pueden compartir
+                    pensamientos o actualizaciones aquí.</p>
+                <div class="flex justify-between items-center mt-4">
+                    <button class="text-blue-500">Me gusta</button>
+                    <button class="text-blue-500">Comentar</button>
+                    <button class="text-blue-500">Compartir</button>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <div class="flex items-center space-x-4">
+                    <img src="https://via.placeholder.com/50" alt="Perfil" class="w-12 h-12 rounded-full">
+                    <div>
+                        <h3 class="font-semibold">Enzo Rico</h3>
+                        <p class="text-gray-500 text-sm">Hace 1 día</p>
+                    </div>
+                </div>
+                <p class="mt-4 text-gray-700">Aquí hay otra publicación de prueba. Los usuarios pueden interactuar con
+                    ella a través de me gusta, comentarios y compartir.</p>
+                <div class="flex justify-between items-center mt-4">
+                    <button class="text-blue-500">Me gusta</button>
+                    <button class="text-blue-500">Comentar</button>
+                    <button class="text-blue-500">Compartir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

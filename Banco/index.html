@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Crud de banco</title>
+</head>
+
+<body class="bg-gray-100 p-6">
+
+    <!-- Container -->
+    <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <h1 class="text-2xl font-bold mb-4">CRUD de Usuarios</h1>
+
+        <!-- Formulario -->
+        <form id="userForm" class="mb-6">
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Nombre:</label>
+                    <input type="text" id="name" name="name"
+                        class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                        required>
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email:</label>
+                    <input type="email" id="email" name="email"
+                        class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                        required>
+                </div>
+            </div>
+            <div class="mt-4">
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md">Añadir Usuario</button>
+            </div>
+        </form>
+
+        <!-- Tabla de Usuarios -->
+        <table class="min-w-full bg-white border">
+            <thead>
+                <tr>
+                    <th class="py-2 px-4 border-b">Nombre</th>
+                    <th class="py-2 px-4 border-b">Email</th>
+                    <th class="py-2 px-4 border-b">Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="userList">
+                <!-- Los usuarios añadidos aparecerán aquí -->
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
