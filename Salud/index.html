@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salud - Gestión de Pacientes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Contenedor Principal -->
+    <div class="container mx-auto py-8 px-4">
+
+        <!-- Contenedor para Título e Imagen -->
+        <div class="flex items-center justify-between mb-6">
+            <!-- Título -->
+            <h1 class="text-3xl font-bold text-green-600">Gestión de Pacientes</h1>
+
+            <!-- Imagen al lado del Título -->
+            <img src="/assets/salud.jpg" alt="Descripción de la imagen" class="w-30 h-20 rounded-lg shadow-lg">
+        </div>
+
+        <!-- Select de Consultas -->
+        <div class="mb-6">
+            <label for="consulta" class="block text-lg font-semibold mb-2 text-gray-700">Selecciona Tipo de Consulta:</label>
+            <select id="consulta" class="select-health bg-green-100 border border-gray-300 rounded-lg py-2 px-4 block w-auto focus:ring-green-500 focus:border-green-500">
+                <option value="consulta-general">Consulta General</option>
+                <option value="pediatria">Pediatría</option>
+                <option value="cardiologia">Cardiología</option>
+            </select>
+        </div>
+
+        <!-- Tabla de Pacientes -->
+        <div class="overflow-x-auto mb-8">
+            <table class="table-health w-full text-left bg-white shadow-lg rounded-lg">
+                <thead class="bg-green-200">
+                    <tr>
+                        <th class="py-3 px-4">ID del Paciente</th>
+                        <th class="py-3 px-4">Nombre</th>
+                        <th class="py-3 px-4">Edad</th>
+                        <th class="py-3 px-4">Diagnóstico</th>
+                        <th class="py-3 px-4">Fecha de Ingreso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="hover:bg-green-100">
+                        <td class="py-3 px-4">001</td>
+                        <td class="py-3 px-4">Juan Pérez</td>
+                        <td class="py-3 px-4">45</td>
+                        <td class="py-3 px-4">Hipertensión</td>
+                        <td class="py-3 px-4">15 de junio, 2024</td>
+                    </tr>
+                    <tr class="hover:bg-green-100">
+                        <td class="py-3 px-4">002</td>
+                        <td class="py-3 px-4">Maria López</td>
+                        <td class="py-3 px-4">32</td>
+                        <td class="py-3 px-4">Diabetes Tipo 2</td>
+                        <td class="py-3 px-4">10 de junio, 2024</td>
+                    </tr>
+                    <tr class="hover:bg-green-100">
+                        <td class="py-3 px-4">003</td>
+                        <td class="py-3 px-4">Lautaro Correa</td>
+                        <td class="py-3 px-4">28</td>
+                        <td class="py-3 px-4">Le falta un riñon</td>
+                        <td class="py-3 px-4">20 de mayo, 2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Formulario de Notas Médicas -->
+        <form class="bg-white p-6 shadow-lg rounded-lg mb-8">
+            <label for="patient-notes" class="block text-lg font-semibold mb-2 text-gray-700">Notas del Médico:</label>
+            <textarea id="patient-notes" class="textarea-health w-full p-4 text-gray-700 rounded-lg border border-gray-300 focus:ring-green-500 focus:border-green-500" placeholder="Escribe las notas aquí"></textarea>
+            <button class="btn-health mt-4 bg-green-600 hover:bg-green-500 text-white py-2 px-4 rounded-lg">Guardar</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
